@@ -1,0 +1,22 @@
+{
+  "name": "template-javy-typescript-hello-world",
+  "version": "1.0.0",
+  "description": "TypeScript template for the Blockless CLI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blocklessnetwork/template-javy-typescript-hello-world.git"
+  },
+  "author": "Blockless",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blocklessnetwork/template-javy-typescript-hello-world/issues"
+  },
+  "homepage": "https://github.com/blocklessnetwork/template-javy-typescript-hello-world#readme",
+  "dependencies": {
+    "tcs": "^10.0.2"
+  }
+}
