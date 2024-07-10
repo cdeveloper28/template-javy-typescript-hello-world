@@ -1,12 +1,12 @@
 {
   "name": "template-javy-typescript-hello-world",
   "version": "1.0.0",
-  "description": "TypeScript template for the Blockless CLI.",
+  "description": "Javy typescript template for the Blockless CLI.",
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf build",
-    "build:release": "npm run clean; tcs index.ts --target release",
-    "build:debug": "npm run clean; tcs index.ts --target debug"
+    "build:release": "npm run clean; tsc index.ts --target release",
+    "build:debug": "npm run clean; tsc index.ts --target debug"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/blocklessnetwork/template-javy-typescript-hello-world#readme",
   "dependencies": {
-    "tcs": "^10.0.2"
+    "tsc": "^2.0.4"
   }
 }
