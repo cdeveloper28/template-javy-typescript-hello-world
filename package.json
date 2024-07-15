@@ -1,24 +1,25 @@
 {
-  "name": "template-javy-typescript-hello-world",
-  "version": "1.0.0",
-  "description": "Javy typescript template for the Blockless CLI.",
-  "main": "index.js",
-  "scripts": {
-    "clean": "rm -rf build",
-    "build:release": "npm run clean; tsc index.ts --target release",
-    "build:debug": "npm run clean; tsc index.ts --target debug"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/blocklessnetwork/template-javy-typescript-hello-world.git"
-  },
-  "author": "Blockless",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/blocklessnetwork/template-javy-typescript-hello-world/issues"
-  },
-  "homepage": "https://github.com/blocklessnetwork/template-javy-typescript-hello-world#readme",
-  "dependencies": {
-    "tsc": "^2.0.4"
-  }
+	"name": "template-javy-typescript-hello-world",
+	"version": "1.0.0",
+	"description": "Javy typescript template for the Blockless CLI.",
+	"main": "index.js",
+	"scripts": {
+		"clean": "rm -rf build",
+		"build:release": "npm run clean; tsc -p tsconfig.release.json",
+		"build:debug": "npm run clean; tsc -p tsconfig.debug.json"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/blocklessnetwork/template-javy-typescript-hello-world.git"
+	},
+	"author": "Blockless",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/blocklessnetwork/template-javy-typescript-hello-world/issues"
+	},
+	"homepage": "https://github.com/blocklessnetwork/template-javy-typescript-hello-world#readme",
+	"dependencies": {
+		"tsc": "^2.0.4",
+		"typescript": "^5.5.3"
+	}
 }
