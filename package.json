@@ -6,7 +6,7 @@
 	"scripts": {
 		"clean": "rm -rf build",
 		"build": "bls-sdk-ts build ./src/index.ts",
-    "invoke": "bls-runtime ./build/index.wasm"
+		"invoke": "bls-runtime ./build/index.wasm"
 	},
 	"repository": {
 		"type": "git",
@@ -19,6 +19,6 @@
 	},
 	"homepage": "https://github.com/blocklessnetwork/template-javy-typescript-hello-world#readme",
 	"dependencies": {
-		"@blockless/sdk-ts": "^1.0.1"
+		"@blockless/sdk-ts": "^1.0.2"
 	}
 }
