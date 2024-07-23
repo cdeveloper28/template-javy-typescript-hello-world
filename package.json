@@ -1,13 +1,13 @@
 {
-	"name": "template-javy-typescript-hello-world",
+	"name": "template_name",
 	"version": "1.0.0",
 	"description": "Javy typescript template for the Blockless CLI.",
 	"main": "index.js",
 	"scripts": {
 		"clean": "rm -rf build",
-		"build:release": "mkdir -p ./build/ && bls-sdk-ts build ./index.ts -o ./build -f {name}.wasm",
-		"build:debug": "mkdir -p ./build/ && bls-sdk-ts build ./index.ts -o ./build -f {name}.wasm",
-		"invoke": "bls-runtime ./build/{name}.wasm"
+		"build:release": "mkdir -p ./build/ && bls-sdk-ts build ./index.ts -o ./build -f template_name.wasm",
+		"build:debug": "mkdir -p ./build/ && bls-sdk-ts build ./index.ts -o ./build -f template_name.wasm",
+		"invoke": "bls-runtime ./build/template_name.wasm"
 	},
 	"repository": {
 		"type": "git",
