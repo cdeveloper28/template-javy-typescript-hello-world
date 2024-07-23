@@ -5,9 +5,9 @@
 	"main": "index.js",
 	"scripts": {
 		"clean": "rm -rf build",
-		"build:release": "bls-sdk-ts build ./index.ts",
-		"build:debug": "bls-sdk-ts build ./index.ts",
-		"invoke": "bls-runtime ./build/index.wasm"
+		"build:release": "mkdir -p ./build/ && bls-sdk-ts build ./index.ts -o ./build -f {name}.wasm",
+		"build:debug": "mkdir -p ./build/ && bls-sdk-ts build ./index.ts -o ./build -f {name}.wasm",
+		"invoke": "bls-runtime ./build/{name}.wasm"
 	},
 	"repository": {
 		"type": "git",
