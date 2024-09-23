@@ -6,7 +6,7 @@
 	"scripts": {
 		"clean": "rm -rf build",
 		"build:release": "mkdir -p ./build/ && bls-sdk-ts build ./index.ts -o ./build -f release.wasm",
-		"build:debug": "mkdir -p ./build/ && bls-sdk-ts build ./index.ts -o ./build -f build.wasm",
+		"build:debug": "mkdir -p ./build/ && bls-sdk-ts build ./index.ts -o ./build -f debug.wasm",
 		"invoke": "bls-runtime ./build/template_name.wasm"
 	},
 	"repository": {
