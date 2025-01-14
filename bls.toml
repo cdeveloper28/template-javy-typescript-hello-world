@@ -1,6 +1,6 @@
 name = "template_name"
 version = "1.0.0"
-type = "function"
+type = "text"
 
 [deployment]
 permission = "public"
