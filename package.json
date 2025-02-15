@@ -20,7 +20,7 @@
 	},
 	"homepage": "https://github.com/blocklessnetwork/template-javy-typescript-hello-world#readme",
 	"dependencies": {
-		"@blockless/sdk-ts": "^1.0.4",
+		"@blockless/sdk-ts": "^1.0.5",
 		"mkdirp": "^3.0.1"
 	}
 }
