@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="icon-film" viewBox="0 0 24 24">
+    <rect x="3" y="5" width="18" height="14" rx="3" fill="#ffe600" fill-opacity="0.15"/>
+    <rect x="3" y="5" width="18" height="14" rx="3" stroke="#ffe600" stroke-width="2" fill="none"/>
+    <circle cx="7" cy="8" r="1" fill="#ffe600"/>
+    <circle cx="17" cy="16" r="1" fill="#ffe600"/>
+    <rect x="8" y="10" width="8" height="4" rx="1" fill="#ffe600" fill-opacity="0.3"/>
+  </symbol>
+  <symbol id="icon-genre" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" stroke="#ffe600" stroke-width="2" fill="none"/>
+    <path d="M12 6v6l4 2" stroke="#ffe600" stroke-width="2" fill="none"/>
+  </symbol>
+  <symbol id="icon-star" viewBox="0 0 24 24">
+    <polygon points="12,3 15,10 22,10 17,15 18.5,22 12,18 5.5,22 7,15 2,10 9,10" fill="#ffe600" stroke="#ffe600" stroke-width="1.5"/>
+  </symbol>
+  <symbol id="icon-sparkle" viewBox="0 0 24 24">
+    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="#ffe600" stroke-width="2" fill="none"/>
+    <circle cx="12" cy="12" r="2" fill="#ffe600"/>
+  </symbol>
+  <symbol id="icon-heart" viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-9-8.5C-1.5 7.5 4.5 2.5 12 8.5 19.5 2.5 25.5 7.5 21 12.5c-3 4.15-9 8.5-9 8.5z" fill="#ffe600" stroke="#ffe600" stroke-width="1.5"/>
+  </symbol>
+  <!-- Genre-specific icons -->
+  <symbol id="icon-action" viewBox="0 0 24 24">
+    <rect x="4" y="10" width="16" height="4" rx="2" fill="#ffe600"/>
+    <rect x="10" y="4" width="4" height="16" rx="2" fill="#ffe600"/>
+  </symbol>
+  <symbol id="icon-adventure" viewBox="0 0 24 24">
+    <polygon points="12,2 22,22 2,22" fill="#ffe600" stroke="#ffe600" stroke-width="1.5"/>
+    <circle cx="12" cy="17" r="2" fill="#181818"/>
+  </symbol>
+  <symbol id="icon-comedy" viewBox="0 0 24 24">
+    <ellipse cx="12" cy="12" rx="10" ry="8" stroke="#ffe600" stroke-width="2" fill="none"/>
+    <path d="M8 14c1.5 2 6.5 2 8 0" stroke="#ffe600" stroke-width="2" fill="none"/>
+    <circle cx="9" cy="10" r="1" fill="#ffe600"/>
+    <circle cx="15" cy="10" r="1" fill="#ffe600"/>
+  </symbol>
+  <symbol id="icon-crime" viewBox="0 0 24 24">
+    <rect x="5" y="7" width="14" height="10" rx="2" stroke="#ffe600" stroke-width="2" fill="none"/>
+    <rect x="9" y="11" width="6" height="2" fill="#ffe600"/>
+    <circle cx="12" cy="12" r="8" stroke="#ffe600" stroke-width="1" fill="none"/>
+  </symbol>
+  <symbol id="icon-drama" viewBox="0 0 24 24">
+    <ellipse cx="12" cy="12" rx="10" ry="8" stroke="#ffe600" stroke-width="2" fill="none"/>
+    <path d="M8 16c1.5-2 6.5-2 8 0" stroke="#ffe600" stroke-width="2" fill="none"/>
+    <circle cx="9" cy="10" r="1" fill="#ffe600"/>
+    <circle cx="15" cy="10" r="1" fill="#ffe600"/>
+  </symbol>
+  <symbol id="icon-family" viewBox="0 0 24 24">
+    <circle cx="8" cy="14" r="4" fill="#ffe600"/>
+    <circle cx="16" cy="14" r="4" fill="#ffe600"/>
+    <circle cx="12" cy="8" r="3" fill="#ffe600"/>
+  </symbol>
+  <symbol id="icon-fantasy" viewBox="0 0 24 24">
+    <ellipse cx="12" cy="16" rx="8" ry="4" fill="#ffe600"/>
+    <polygon points="12,2 15,10 9,10" fill="#ffe600"/>
+    <circle cx="12" cy="10" r="2" fill="#181818"/>
+  </symbol>
+  <symbol id="icon-history" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" stroke="#ffe600" stroke-width="2" fill="none"/>
+    <path d="M12 6v6l4 2" stroke="#ffe600" stroke-width="2" fill="none"/>
+  </symbol>
+  <symbol id="icon-horror" viewBox="0 0 24 24">
+    <ellipse cx="12" cy="16" rx="8" ry="4" fill="#ffe600"/>
+    <ellipse cx="12" cy="8" rx="6" ry="3" fill="#ffe600"/>
+    <circle cx="9" cy="8" r="1" fill="#181818"/>
+    <circle cx="15" cy="8" r="1" fill="#181818"/>
+  </symbol>
+  <symbol id="icon-musical" viewBox="0 0 24 24">
+    <rect x="6" y="4" width="4" height="16" rx="2" fill="#ffe600"/>
+    <rect x="14" y="8" width="4" height="12" rx="2" fill="#ffe600"/>
+    <circle cx="8" cy="20" r="2" fill="#ffe600"/>
+    <circle cx="16" cy="20" r="2" fill="#ffe600"/>
+  </symbol>
+  <symbol id="icon-mystery" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" stroke="#ffe600" stroke-width="2" fill="none"/>
+    <path d="M12 16v-2c0-2 3-2 3-5a3 3 0 1 0-6 0" stroke="#ffe600" stroke-width="2" fill="none"/>
+    <circle cx="12" cy="18" r="1" fill="#ffe600"/>
+  </symbol>
+  <symbol id="icon-romance" viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-9-8.5C-1.5 7.5 4.5 2.5 12 8.5 19.5 2.5 25.5 7.5 21 12.5c-3 4.15-9 8.5-9 8.5z" fill="#ffe600" stroke="#ffe600" stroke-width="1.5"/>
+  </symbol>
+  <symbol id="icon-scifi" viewBox="0 0 24 24">
+    <ellipse cx="12" cy="16" rx="8" ry="4" fill="#ffe600"/>
+    <ellipse cx="12" cy="8" rx="6" ry="3" fill="#ffe600"/>
+    <rect x="10" y="6" width="4" height="4" fill="#181818"/>
+  </symbol>
+  <symbol id="icon-animation" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" stroke="#ffe600" stroke-width="2" fill="none"/>
+    <circle cx="12" cy="12" r="5" fill="#ffe600"/>
+    <circle cx="12" cy="12" r="2" fill="#181818"/>
+  </symbol>
+  <symbol id="icon-documentary" viewBox="0 0 24 24">
+    <rect x="4" y="6" width="16" height="12" rx="2" stroke="#ffe600" stroke-width="2" fill="none"/>
+    <rect x="8" y="10" width="8" height="4" fill="#ffe600"/>
+  </symbol>
+</svg> 

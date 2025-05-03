@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlessRec - Movie Recommendations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- SVG Pattern Background -->
+  <div class="bg-pattern"></div>
+
+  <header>
+    <div class="logo">
+      <svg width="40" height="40"><use href="icons.svg#icon-film"></use></svg>
+      <h1>BlessRec</h1>
+    </div>
+    <p class="subtitle">Its time to touch grass🍃 Find your next favorite movie </p>
+    <P style="color: green; font-family: 'Courier New', Courier, monospace;">especially monks, blessed, and core contributors also thug shakers you guys need grass</P>
+  </header>
+
+  <main>
+    <section class="genre-select-section">
+      <h2><svg width="28" height="28"><use href="icons.svg#icon-genre"></use></svg> Choose a Genre</h2>
+      <div id="genre-buttons" class="genre-buttons">
+        <!-- Genre buttons will be added here by JavaScript -->
+      </div>
+    </section>
+
+    <section class="recommendations">
+      <h2><svg width="28" height="28"><use href="icons.svg#icon-star"></use></svg> Recommendations</h2>
+      <div id="movies-grid" class="movies-grid"></div>
+      <div id="rec-message" class="message"></div>
+    </section>
+
+    <section class="suggestions">
+      <h2><svg width="28" height="28"><use href="icons.svg#icon-sparkle"></use></svg> Proactive Suggestions</h2>
+      <div id="suggestions-grid" class="movies-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with <svg width="18" height="18"><use href="icons.svg#icon-heart"></use></svg> by BlessRec</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html> 

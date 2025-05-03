@@ -5,6 +5,7 @@ type = "text"
 [deployment]
 permission = "public"
 nodes = 1
+permissions = [ "http://www.omdbapi.com/" ]
 
 [build]
 dir = "build"
@@ -15,3 +16,13 @@ command = "npm run build:debug"
 dir = "build"
 entry = "template_name.wasm"
 command = "npm run build:release"
+
+[[deployments]]
+name = "blessnet"
+description = ""
+cid = "bafybeiesiy5bykmzih7hnsnpbaf7jchuuan2mapmgvbz24rjz4mxr73aoy"
+created = "2025-05-03T09:41:49.660Z"
+
+  [deployments.runtime]
+  url = "blessnet.tar.gz"
+  checksum = "adb2d7b823b9c406ed29ff8d424eeb355ac0fc49473bd9aa53cae2e545ed55ae"

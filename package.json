@@ -1,5 +1,5 @@
 {
-	"name": "template_name",
+	"name": "blesss",
 	"version": "1.0.0",
 	"description": "Javy typescript template for the Blockless CLI.",
 	"main": "index.js",
@@ -22,5 +22,8 @@
 	"dependencies": {
 		"@blockless/sdk-ts": "^1.0.5",
 		"mkdirp": "^3.0.1"
+	},
+	"bls": {
+		"functionId": "bless-function_blesss-1.0.0"
 	}
 }

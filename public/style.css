@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+:root {
+  --yellow: #ffe600;
+  --yellow-dark: #ffd600;
+  --black: #181818;
+  --gray: #232323;
+  --white: #fff;
+  --card-radius: 1.2rem;
+  --transition: 0.3s cubic-bezier(.4,0,.2,1);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: linear-gradient(135deg, var(--black) 0%, #222 100%);
+  min-height: 100vh;
+  color: var(--white);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.bg-pattern {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: url('data:image/svg+xml;utf8,<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="10" y="10" width="40" height="40" rx="10" fill="%23ffe600" fill-opacity="0.04"/><circle cx="30" cy="30" r="20" stroke="%23ffe600" stroke-width="2" fill="none" opacity="0.07"/></svg>') repeat;
+  opacity: 0.7;
+  animation: patternMove 20s linear infinite;
+}
+
+@keyframes patternMove {
+  0% { background-position: 0 0; }
+  100% { background-position: 120px 60px; }
+}
+
+header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding: 2.5rem 1rem 1.2rem 1rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.logo h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--yellow);
+  letter-spacing: 2px;
+  margin: 0;
+  text-shadow: 0 2px 16px #000a;
+}
+.subtitle {
+  color: var(--yellow-dark);
+  font-size: 1.1rem;
+  margin-top: 0.3rem;
+  letter-spacing: 1px;
+}
+
+main {
+  z-index: 1;
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2rem 1rem;
+}
+
+.genre-select-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  background: var(--gray);
+  border-radius: var(--card-radius);
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 2px 16px #0003;
+  font-size: 1.2rem;
+}
+.genre-select-section label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--yellow);
+  font-weight: 600;
+}
+#genre-select {
+  background: var(--black);
+  color: var(--yellow);
+  border: 2px solid var(--yellow);
+  border-radius: 0.7rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.1rem;
+  font-family: inherit;
+  transition: border-color var(--transition), box-shadow var(--transition);
+  outline: none;
+  box-shadow: 0 1px 8px #0002;
+}
+#genre-select:focus {
+  border-color: var(--yellow-dark);
+  box-shadow: 0 0 0 2px var(--yellow-dark)44;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+section h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--yellow);
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem 1.5rem;
+  z-index: 1;
+}
+
+.movie-card {
+  background: linear-gradient(120deg, var(--gray) 60%, #222 100%);
+  border-radius: var(--card-radius);
+  box-shadow: 0 4px 24px #0005;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: transform var(--transition), box-shadow var(--transition);
+  position: relative;
+  min-height: 340px;
+  opacity: 0;
+  transform: translateY(30px) scale(0.98);
+  animation: fadeInCard 0.7s cubic-bezier(.4,0,.2,1) forwards;
+}
+@keyframes fadeInCard {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.movie-card:hover, .movie-card:focus-within {
+  transform: scale(1.04) translateY(-6px);
+  box-shadow: 0 8px 32px #0008, 0 0 0 3px var(--yellow-dark)33;
+  z-index: 2;
+}
+.movie-poster {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: var(--card-radius);
+  border-top-right-radius: var(--card-radius);
+  background: #111;
+  transition: filter var(--transition);
+}
+.movie-card:hover .movie-poster {
+  filter: brightness(1.08) drop-shadow(0 0 8px var(--yellow-dark)66);
+}
+.movie-info {
+  padding: 1.1rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+.movie-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--yellow);
+  margin: 0 0 0.2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.movie-genre {
+  font-size: 0.98rem;
+  color: var(--yellow-dark);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.movie-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 1.05rem;
+  color: var(--white);
+  font-weight: 600;
+}
+.movie-rating svg {
+  fill: var(--yellow);
+}
+.movie-desc {
+  font-size: 0.97rem;
+  color: #eee;
+  margin-top: 0.3rem;
+  flex: 1;
+}
+
+.message {
+  margin-top: 1.2rem;
+  color: var(--yellow-dark);
+  font-size: 1.1rem;
+  text-align: center;
+  min-height: 2.2rem;
+}
+
+footer {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding: 1.5rem 0 1rem 0;
+  color: var(--yellow-dark);
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+footer svg {
+  vertical-align: middle;
+  fill: var(--yellow);
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .movies-grid {
+    grid-template-columns: 1fr;
+  }
+  .genre-select-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+    font-size: 1rem;
+    padding: 1rem 0.7rem;
+  }
+  main {
+    padding: 1rem 0.3rem 2rem 0.3rem;
+  }
+}
+
+.genre-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.genre-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.genre-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.genre-button.active {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: #4CAF50;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+.genre-button svg {
+  fill: currentColor;
+}
+
+.genre-button span {
+  font-weight: 500;
+} 
